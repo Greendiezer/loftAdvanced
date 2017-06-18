@@ -11,6 +11,8 @@ global.$ = {
   },
   gulp: require('gulp'),
   del: require('del'),
+  spritesmith: require('gulp.spritesmith'),
+  merge: require('merge-stream'),
   browserSync: require('browser-sync').create(),
   gp: require('gulp-load-plugins')()
 };
@@ -18,6 +20,7 @@ global.$ = {
 $.path.task.forEach(function(taskPath) {
   require(taskPath)();
 });
+
 
 $.gulp.task('default', $.gulp.series(
   'clean',
@@ -28,7 +31,9 @@ $.gulp.task('default', $.gulp.series(
     'js:process',
     'copy:image',
     'css:foundation',
-    'sprite:svg'
+    'sprite:svg',
+    'sprite',
+    'fonts'
   ),
   $.gulp.parallel(
     'watch',
