@@ -1,0 +1,28 @@
+.contacts{
+    right: 0;
+    left: 0;
+    position: absolute;
+    top: 50%;
+    @include centered();
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgb(244, 245, 240);
+    opacity: 0.8;
+    width: 380px;
+    z-index: 22;
+}
+
+.contacts__list{
+    padding: 0 40px;
+    text-align: left;
+}
+
+.contact-row{
+    margin-bottom: 25px;
+}
+
+.contact-row__icon{
+    margin-right: 10px;
+    font-size: 25px;
+    color: #6c9c5a;
+}

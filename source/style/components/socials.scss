@@ -1,0 +1,36 @@
+.hero__socials{
+    padding: 30px 30px;
+    float: left;
+}
+.socials__item{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 13px;
+}
+
+.socials__link{
+    width: 33px;
+    height: 20px;
+}
+
+.socials__link-img{
+    max-width: 35px;
+    height: 20px;
+    display: block;
+    fill: #ffffff;
+}
+
+.hero__socials .socials__link-img{
+   
+    &:hover{
+        fill: #6c9c5a;
+    }
+}
+
+.footer__socials .socials__link-img{
+    opacity: .3;
+
+    &:hover{
+        opacity: 1;
+    }
+}

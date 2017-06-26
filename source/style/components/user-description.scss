@@ -1,0 +1,41 @@
+.user-description{
+    padding-right: 20px;
+}
+.user-description__image{
+    text-align: center;
+}
+
+.user-description__avatar{
+    width: 100%;
+}
+
+.user-description__title{
+    text-align: center;
+}
+
+.block-subtitle{
+    font-size: 35px;
+    font-family: "sansus";
+    color: $main-font-color;
+    text-transform: uppercase;
+    padding: 20px 60px;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 30px;
+
+    &:after {
+        position: absolute;
+        content: "";
+        display: block;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 89px;
+        height: 3px;
+        background: $main-font-color;
+  }
+}
+
+.user-description__text p{
+    margin-top: 0;
+}
