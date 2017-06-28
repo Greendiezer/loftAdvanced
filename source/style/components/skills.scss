@@ -3,6 +3,7 @@
 
     &__item{
         height: 230px;
+        display: inline-block;
     }
 }
 .skills-row__title{
@@ -10,27 +11,33 @@
     font-family: "sansus";
     color: $main-font-color;
 }
+.skill{
+  position: relative;
+}
 
 .skill__title{
-    position: relative;
-    top: -100px;
-    height: 50px;
-    width: 110px;
-    left: 26px;
+    position: absolute;
+    top: 50%;
+    width: 85px;
+    left: 50%;
+    transform: translate(-50%, -50%);
     overflow: hidden;
     text-align: center;
+    color: #4e8839;
+    font-size: 14px;
+    font-family: "robotomedium";
 }
 
 
 .skill-circle {
   fill: none;
-  stroke-width: 15;
+  stroke-width: 13;
 }
 .circle__first {
   stroke: #dfdcd5;
 }
 .circle__second {
-  stroke: #1bb696;
+  stroke: #4e8839;
   stroke-dasharray: .0010 282.6;
   transition: all 1s;
 }
