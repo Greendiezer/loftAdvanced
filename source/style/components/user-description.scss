@@ -18,7 +18,7 @@
     font-family: "sansus";
     color: $main-font-color;
     text-transform: uppercase;
-    padding: 20px 60px;
+    padding: 20px 44px;
     position: relative;
     display: inline-block;
     margin-bottom: 30px;
@@ -38,4 +38,5 @@
 
 .user-description__text p{
     margin-top: 0;
+    margin-bottom: 20px;
 }

@@ -1,21 +1,21 @@
 .about {
-  @extend %clearfix;
+  display: flex;
+  flex-direction: row;
 }
 
 .about__left, .about__right {
-  float: left;
+  display: flex;
   width: 50%;
-  position: relative;
 }
 
 .about__left {
   background: $green;
-  height: 100%;
 }
 
 .about__right {
   background: $white;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
   & p{
     padding-left: 40px;
   }
@@ -26,6 +26,10 @@
   & .block-subtitle{
     width: 380px;
   }
+}
+
+.about__right-description{
+  margin-bottom: 58px;
 }
 
 .about__left-title{

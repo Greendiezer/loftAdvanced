@@ -1,0 +1,46 @@
+.reviews__list{
+   justify-content: center;
+   margin-bottom: 70px;
+   display: flex;
+}
+
+.reviews__item{
+    word-wrap: break-word;
+    width: calc(33% - 10px);
+    text-align: center;
+    padding: 0 10px;
+}
+
+.review{
+    display: flex;
+    flex-direction: column;
+}
+
+.review-user__img{
+    border-radius: 50%;
+    max-width: 93px;
+    max-height: 93px;
+    overflow: hidden;
+    margin: 0 auto 20px;
+}
+
+.review-user__pic{
+    width: 93px;
+}
+.review__text{
+    display: flex;
+    flex-direction: column;
+    color: $gray;
+    font-family: "robotoitalic";
+    background-image: url('/assets/img/bg/quotes.png');
+    background-repeat: no-repeat;
+}
+
+.review-user__text{
+    text-align: left;
+    margin-bottom: 20px;
+}
+.review-user__name{
+    color: $light-green;
+    font-family: "robotobold_italic";
+}

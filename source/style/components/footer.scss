@@ -6,13 +6,23 @@
 
 .footer__top{
     background: rgba(47, 50, 52, .9);
-    @extend %clearfix;
+    padding: 25px 0;
 }
-.footer__col{
-    float: left;
-    width: 33%;
-    padding: 30px;
+.footer__container{
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.footer__col{
+    width: 33%;
+    padding: 0 30px;
+}
+
+.footer__col-mid{
+    display: flex;
+    flex-direction: column;
+    border-left: 2px solid rgba(255,255,255,.2);
+    border-right: 2px solid rgba(255,255,255,.2);
 }
 
 
@@ -28,15 +38,24 @@
 }
 .footer__menu{
    margin-bottom: 30px;
+   display: flex;
 }
+
 
 .footer__socials{
    margin-bottom: 23px;
 }
-.menu__item{
-    display: inline-block;
-    margin-right: 40px;
+
+.menu{
+    width: 100%;
 }
+
+.menu__list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 .menu__link{
     vertical-align: middle;
     font-size: 15px;
