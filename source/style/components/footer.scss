@@ -68,13 +68,16 @@
 }
 .footer__bottom{
     background: rgba(128, 169, 113, .9);
-}
-
-.footer__bottom{
     text-align: center;
     padding: 9px 0 15px;
 }
 
+.welcome .footer__bottom{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: none;
+}
 .footer__text{
     color: rgba($white, .7);
     font-size: 16px;

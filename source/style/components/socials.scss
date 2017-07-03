@@ -34,3 +34,12 @@
         opacity: 1;
     }
 }
+
+.user__socials .socials__link-img{
+    opacity: .3;
+
+    &:hover{
+        opacity: 1;
+        fill: #6c9c5a;
+    }
+}
