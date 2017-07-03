@@ -9,6 +9,12 @@
     opacity: 0.8;
     width: 380px;
     z-index: 22;
+    @include phone() {
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: none;
+    }
 }
 
 .contacts__list{

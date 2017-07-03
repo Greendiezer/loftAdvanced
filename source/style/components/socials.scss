@@ -1,6 +1,9 @@
 .hero__socials{
     padding: 30px 30px;
     float: left;
+    @include phone() {
+        padding: 15px 10px;
+    }
 }
 .socials__item{
     display: inline-block;

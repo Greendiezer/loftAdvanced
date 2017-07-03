@@ -1,6 +1,9 @@
 .blog__left{
     position: relative;
     width: calc(33.33% - 10px);
+    @include tablet() {
+        display: none;
+    }
 }
 
 .blog__tabs{

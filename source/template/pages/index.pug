@@ -32,11 +32,11 @@ block content
             .user__name Сергей Винокуров
             .user__desc Личный сайт разработчика
   section.section.about
-    .about__left
-      .triangle.triangle_fill_green.about__left-triangle
-        svg(viewbox="0 0 1000 150" preserveAspectRatio="none").triangle__svg
-          polygon(points="0,0 0,150 1000,150 1000,130")
-
+    .triangles
+      svg.traingles__works(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 1000 130', preserveaspectratio='none')
+        polygon.about-triangle__left(points='0,0   0,130   500.8,130   500.8,113')
+        polygon.about-triangle__right(points='1000,0   1000,130   500,130   500,113')
+    .about__left      
       .about__left-title
         //- +block-title('about-header', 'Обо мне')
         .block-title(style="background-image: url('/assets/img/bg/about_header_bg.png')")
@@ -50,10 +50,7 @@ block content
           .user-description__text
             p Я веб разработчик из Москвы. Мне 24 года. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
             p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
-    .about__right
-      .triangle.triangle_fill_white.about__left-triangle
-        svg(viewbox="0 0 1000 150" preserveAspectRatio="none").triangle__svg
-          polygon(points="1000,0 1000,150 0,150 0,130")
+    .about__right    
       .about__right-title
         .block-subtitle Чем я могу быть вам полезен
       .about__right-description
@@ -188,4 +185,5 @@ block content
           p.footer_quote Всегда пишите код так, будто сопровождать его будет склонный к насилию психопат, который знает, где вы живете.<br> 
           p.author — Martin Golding
     .footer__bottom
-      .footer__text © Сергей Винокуров | создано с любовью в LoftSchool | 2017
+      .footer__text © Сергей Винокуров 
+      span | создано с любовью в LoftSchool | 2017

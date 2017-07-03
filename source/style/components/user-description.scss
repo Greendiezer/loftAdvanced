@@ -1,5 +1,8 @@
 .user-description{
     padding-right: 20px;
+    @include laptop(){
+        padding-right: 0;
+    }
 }
 .user-description__image{
     text-align: center;
@@ -22,6 +25,9 @@
     position: relative;
     display: inline-block;
     margin-bottom: 30px;
+    @include phone() {
+      padding: 30px 10px;
+    }
 
     &:after {
         position: absolute;
@@ -35,7 +41,11 @@
         background: $main-font-color;
   }
 }
-
+.user-description__text{
+    @include phone() {
+      padding: 0 10px;
+    }
+}
 .user-description__text p{
     margin-top: 0;
     margin-bottom: 20px;

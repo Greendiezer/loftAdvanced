@@ -2,6 +2,10 @@
    justify-content: center;
    margin-bottom: 70px;
    display: flex;
+   @include phone() {
+      flex-direction: column;
+      margin-bottom: 0;
+    }
 }
 
 .reviews__item{
@@ -9,6 +13,10 @@
     width: calc(33% - 10px);
     text-align: center;
     padding: 0 10px;
+    @include phone() {
+       width: 100%;
+       margin-bottom: 35px;
+    }
 }
 
 .review{

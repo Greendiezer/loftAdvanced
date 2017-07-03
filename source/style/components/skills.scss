@@ -1,5 +1,9 @@
 .skills-list{
     padding-left: 40px;
+    @include tablet() {
+      text-align: center;
+      padding-left: 0;
+    }
 
     &__item{
         height: 230px;
@@ -26,6 +30,9 @@
     color: #4e8839;
     font-size: 14px;
     font-family: "robotomedium";
+    @include phone() {
+      font-size: 13px;
+    }
 }
 
 
@@ -46,6 +53,10 @@
   display: inline-block;
   width: 170px;
   height: 170px;
+  @include phone() {
+    width: 149px;
+    height: 149px;
+    }
 }
 
 .skill-circle:hover .circle-0 {

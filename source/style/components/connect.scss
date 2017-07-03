@@ -13,6 +13,9 @@
     max-width: 1200px;
     margin: 0 auto;
     position: relative;
+    @include phone() {
+       margin: 0;
+    }
 }
 .connect__title-block{
     display: flex;
@@ -22,12 +25,18 @@
 .connect__title{
     width: 470px;
     display: flex;
+    @include phone() {
+       width: 100%;
+    }
 }
 
 .contact-me{
     display: flex;
     justify-content: center;
     margin-bottom: 70px;
+    @include tablet() {
+        margin: 0 10px 70px;
+    }
 }
 .contact-form{
     width: 380px;

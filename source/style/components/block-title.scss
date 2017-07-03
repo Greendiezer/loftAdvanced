@@ -10,7 +10,9 @@
   background-repeat: no-repeat;
   background-size: contain;
   line-height: 1.04;
-
+  @include phone() {
+        padding: 40px 0;
+    }
 }
 
 .block-title__text{
