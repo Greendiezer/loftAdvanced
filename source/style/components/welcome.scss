@@ -13,6 +13,10 @@
     right: 100px;
     top: 23px;
     cursor: pointer;
+    &:hover .auth__button-link{
+        background: $light-green;
+
+    }
 }
 
 .auth__button-link{
@@ -74,6 +78,7 @@
     background-color: #629055;
     border-right: 2px solid rgba(222, 227, 231, .5);
     justify-content: center;
+    transition: all .3s;
 
     &:first-child{
         flex-grow: 1.8;
