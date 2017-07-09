@@ -75,9 +75,17 @@ block content
           .footer__menu
             nav.menu
               ul.menu__list
-                each item in ['Мои работы', 'Обо мне', 'Блог', 'Авторизация']
+                - 
+                  var links = [
+                    ['/works.html', 'Мои работы'],
+                    ['/about.html', 'Обо мне'],
+                    ['/blog.html', 'Блог'],
+                    ['index.html', 'Авторизация'],
+                  ]
+
+                each item in links
                   li.menu__item
-                    a(href="#").menu__link #{item}
+                    a(href=`${item[0]}`).menu__link #{item[1]}
           .footer__socials
             ul.socials
               each item in ['vk', 'github', 'in']
@@ -92,4 +100,4 @@ block content
       .footer__text © Сергей Винокуров 
       span | создано с любовью в LoftSchool | 2017
 
-        
+

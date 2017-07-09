@@ -65,47 +65,49 @@ block content
 
 
   section.connect
-    .connect__container
-      .connect__title-block
-        .block-title.connect__title(style="background-image: url('/assets/img/bg/about_header_bg.png')")
-          .block-title__text Что обо мне говорят
-      .feedback
-        ul.reviews__list
-          li.reviews__item
-            .review
-              .review-user__img
-                img.review-user__pic(src="/assets/img/content/review_user1.jpg")
-              .review__text
-                p.review-user__text Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
-                span.review-user__name Ковальчук Дмитрий
-                span.review-user__occ - основатель Loftschool
-          li.reviews__item
-            .review
-              .review-user__img
-                img.review-user__pic(src="/assets/img/content/review_user2.jpg")
-              .review__text
-                p.review-user__text Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
-                span.review-user__name Сабанцев Владимир
-                span.review-user__occ - преподаватель
-      .contact-me
-        form.contact-form(method="post")
-          .contact-form__top
-            .contact-form__title
-              .block-subtitle Связаться со мной
-            .contact-form__line
-              input.contact-form__input(type="text", name="name", placeholder="Ваше имя", required)
-            .contact-form__line
-              input.contact-form__input(type="text", name="email", placeholder="Ваш email", required)
-            .contact-form__line
-              textarea.contact-form__input.contact-form__ta(name="user-message", placeholder="Ваше сообщение")
-          .contact-form__bottom
-            input.btn__submit.btn(type="submit", value="Отправить")
-            input.btn__clear.btn(type="reset", value="Очистить")
+    //- .connect__container
+    .connect__background
+      img.connect__background-img(src="assets/img/bg/works_bg.png")
+    .connect__title-block
+      .block-title.connect__title(style="background-image: url('/assets/img/bg/about_header_bg.png')")
+        .block-title__text Что обо мне говорят
+    .feedback
+      ul.reviews__list
+        li.reviews__item
+          .review
+            .review-user__img
+              img.review-user__pic(src="/assets/img/content/review_user1.jpg")
+            .review__text
+              p.review-user__text Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+              span.review-user__name Ковальчук Дмитрий
+              span.review-user__occ - основатель Loftschool
+        li.reviews__item
+          .review
+            .review-user__img
+              img.review-user__pic(src="/assets/img/content/review_user2.jpg")
+            .review__text
+              p.review-user__text Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
+              span.review-user__name Сабанцев Владимир
+              span.review-user__occ - преподаватель
+    .contact-me
+      form.contact-form(method="post")
+        .contact-form__top
+          .contact-form__title
+            .block-subtitle Связаться со мной
+          .contact-form__line
+            input.contact-form__input(type="text", name="name", placeholder="Ваше имя", required)
+          .contact-form__line
+            input.contact-form__input(type="text", name="email", placeholder="Ваш email", required)
+          .contact-form__line
+            textarea.contact-form__input.contact-form__ta(name="user-message", placeholder="Ваше сообщение")
+        .contact-form__bottom
+          input.btn__submit.btn(type="submit", value="Отправить")
+          input.btn__clear.btn(type="reset", value="Очистить")
     .works__arrow
       a.arrow-up__img
         svg.arrow-up__pic
           use(xlink:href="/assets/img/sprite.svg#arrow_down")
-    footer.footer
+  footer.footer
     .footer__top
       .footer__container
         .footer__col.footer__col-left
@@ -115,9 +117,17 @@ block content
           .footer__menu
             nav.menu
               ul.menu__list
-                each item in ['Мои работы', 'Обо мне', 'Блог', 'Авторизация']
+                - 
+                  var links = [
+                    ['/works.html', 'Мои работы'],
+                    ['/about.html', 'Обо мне'],
+                    ['/blog.html', 'Блог'],
+                    ['index.html', 'Авторизация'],
+                  ]
+
+                each item in links
                   li.menu__item
-                    a(href="#").menu__link #{item}
+                    a(href=`${item[0]}`).menu__link #{item[1]}
           .footer__socials
             ul.socials
               each item in ['vk', 'github', 'in']
