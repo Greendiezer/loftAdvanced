@@ -9,6 +9,7 @@
      @include tablet() {
         background: url("../img/bg/welcome_bg.jpg") center no-repeat;
         background-size: cover;
+        padding: 0;
     }
 }
 
@@ -48,9 +49,11 @@
 
     }
 
-    @include phone() {
-            align-self: center;
-            padding: rem(3px) rem(13px);
+    @include phone() {  
+        right: 0;     
+        left: 50%;
+        transform: translatex(-50%);
+        padding: 3px 13px;
         }
 }
 
@@ -93,6 +96,7 @@
 
 .user__socials{
     margin-bottom: 40px;
+    display: inline-block;
 }
 
 .user__nav-list{

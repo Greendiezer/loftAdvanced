@@ -10,6 +10,9 @@
   background-color: rgba(18, 38, 32, 0.6);
   transform-style: preserve-3d;
   transition: all .6s linear;
+    @include phone() {
+        width: 320px;
+    }
 }
 
 .flipper__block {
