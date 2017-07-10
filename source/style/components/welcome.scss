@@ -1,11 +1,18 @@
 .welcome{
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: url("../img/bg/welcome_bg.jpg") center no-repeat;
-    background-size: cover;
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    // bottom: 0;
+    // right: 0;
+    // background: url("../img/bg/welcome_bg.jpg") center no-repeat;
+    // background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    padding: 1.25rem 1.25rem 6.56rem 1.25rem;
 }
 
 .welcome-background {
@@ -55,11 +62,16 @@
 }
 
 .user__container{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -25%);
-    width: 380px;
+    display: block;
+    margin: auto;
+    text-align: center;;
+}
+
+.user__wrapper{
+    display: block;
+    margin: auto;
+    padding-top: 3.437rem;
+    text-align: center;
 }
 
 
