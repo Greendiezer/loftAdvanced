@@ -1,3 +1,5 @@
+
+//flipper js
 $(function(){
     var auth_btn = $('.auth__button'),
         main_btn = $('.auth__nav-item:first-child'),

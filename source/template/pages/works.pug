@@ -5,7 +5,8 @@ block variables
 
 block content
   section.section.hero
-    img.hero__bg(src="/assets/img/bg/welcome_bg.jpg")
+    .welcome-background
+      canvas.welcome-background-canvas
     .hero__container
       .hero__socials
         ul.socials
@@ -90,7 +91,8 @@ block content
               span.review-user__name Сабанцев Владимир
               span.review-user__occ - преподаватель
     .contact-me
-      form.contact-form(method="post")
+      .blur
+      .contact-form
         .contact-form__top
           .contact-form__title
             .block-subtitle Связаться со мной
