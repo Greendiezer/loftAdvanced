@@ -1,0 +1,15 @@
+mixin navigation()
+    .navigation
+        nav.navigation__block
+            ul.navigation__list
+                -
+                    var navlinks = [
+                        ['/works.html', 'Мои работы'],
+                        ['/about.html', 'Обо мне'],
+                        ['/blog.html', 'Блог'],
+                        ['index.html', 'Авторизация'],
+                    ]
+
+                each item in navlinks
+                    li.navigation__item
+                        a(href=`${item[0]}`).navigation__link #{item[1]}

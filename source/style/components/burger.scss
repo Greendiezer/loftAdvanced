@@ -4,6 +4,7 @@
     top: 10px;
     width: 42px;
     cursor: pointer;
+    z-index: 50;
 }
 
 .burger__line{
@@ -13,13 +14,13 @@
     border-radius: 5px;
 }
 
-.burger:hover .burger__line_2{
+.burger_active .burger__line_2{
     opacity: 0;
 }
 
-.burger:hover .burger__line_1{
+.burger_active .burger__line_1{
     transform: rotate(45deg) translate(10px, 10px);
 }
-.burger:hover .burger__line_3{
+.burger_active .burger__line_3{
     transform: rotate(-45deg) translate(10px, -11px);
 }

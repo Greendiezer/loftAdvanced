@@ -1,6 +1,4 @@
 (function(){
-    console.log("HELLO");
-
     var parallax = (function(){
         var bg = document.querySelector('.hero-background');
             user = document.querySelector('.hero__user-content');
@@ -16,8 +14,8 @@
                 },
 
                 init: function(wScroll) {
-                    this.move(bg, wScroll, 10);
-                    this.move(user, wScroll, 8);
+                    this.move(bg, wScroll, 15);
+                    this.move(user, wScroll, 10);
                 }
             }
             
@@ -28,6 +26,5 @@
 
             parallax.init(wScroll);
 
-        console.log(wScroll);
         }
 })();
