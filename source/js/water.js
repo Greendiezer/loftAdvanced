@@ -1,4 +1,5 @@
 /******/
+if (document.querySelector('.welcome-background')) {
 (function(modules) { // webpackBootstrap
     /******/ // The module cache
     /******/
@@ -26474,3 +26475,4 @@
     /******/
 ]);
 //# sourceMappingURL=water.js.map
+}

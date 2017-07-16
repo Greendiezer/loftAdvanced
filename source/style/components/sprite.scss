@@ -31,17 +31,17 @@ $blog-header-bg-total-width: 2317px;
 $blog-header-bg-total-height: 1348px;
 $blog-header-bg-image: 'sprite.png';
 $blog-header-bg: (1800px, 1002px, -1800px, -1002px, 303px, 208px, 2317px, 1348px, 'sprite.png', 'blog_header_bg', );
-$portfolio-header-bg-name: 'portfolio_header_bg';
-$portfolio-header-bg-x: 0px;
-$portfolio-header-bg-y: 1035px;
-$portfolio-header-bg-offset-x: 0px;
-$portfolio-header-bg-offset-y: -1035px;
-$portfolio-header-bg-width: 1176px;
-$portfolio-header-bg-height: 313px;
-$portfolio-header-bg-total-width: 2317px;
-$portfolio-header-bg-total-height: 1348px;
-$portfolio-header-bg-image: 'sprite.png';
-$portfolio-header-bg: (0px, 1035px, 0px, -1035px, 1176px, 313px, 2317px, 1348px, 'sprite.png', 'portfolio_header_bg', );
+$portfolio-header-name: 'portfolio_header';
+$portfolio-header-x: 0px;
+$portfolio-header-y: 1035px;
+$portfolio-header-offset-x: 0px;
+$portfolio-header-offset-y: -1035px;
+$portfolio-header-width: 1176px;
+$portfolio-header-height: 313px;
+$portfolio-header-total-width: 2317px;
+$portfolio-header-total-height: 1348px;
+$portfolio-header-image: 'sprite.png';
+$portfolio-header: (0px, 1035px, 0px, -1035px, 1176px, 313px, 2317px, 1348px, 'sprite.png', 'portfolio_header', );
 $quotes-name: 'quotes';
 $quotes-x: 2203px;
 $quotes-y: 1002px;
@@ -100,7 +100,7 @@ $viking: (2103px, 1002px, -2103px, -1002px, 100px, 114px, 2317px, 1348px, 'sprit
 $spritesheet-width: 2317px;
 $spritesheet-height: 1348px;
 $spritesheet-image: 'sprite.png';
-$spritesheet-sprites: ($about-header-bg, $blog-header-bg, $portfolio-header-bg, $quotes, $works-bg, $works-header-bg, $work1, $viking, );
+$spritesheet-sprites: ($about-header-bg, $blog-header-bg, $portfolio-header, $quotes, $works-bg, $works-header-bg, $work1, $viking, );
 $spritesheet: (2317px, 1348px, 'sprite.png', $spritesheet-sprites, );
 
 // The provided mixins are intended to be used with the array-like variables
