@@ -17,10 +17,14 @@
         }
     })();
     
-    blur.set();
+    if (document.querySelector('.blur')) {
+        blur.set();
+    }
 
     window.onresize = function () {
-        blur.set();
+        if (document.querySelector('.blur')) {
+            blur.set();
+        }
     }
 })();
 

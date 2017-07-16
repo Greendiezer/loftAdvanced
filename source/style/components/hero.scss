@@ -4,6 +4,32 @@
   
 }
 
+.hero-background{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 0;
+  overflow: hidden;
+  transform: translate3d(0px, 0%, 0px);
+}
+
+.hero-background__img{
+  height: 125%;
+  min-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.hero_blog{
+    height: 466px;
+    min-height: 466px;
+    padding: 14px 30px;
+    background: url("../../assets/img/bg/welcome_bg.jpg") 50%;
+    background-size: cover;
+}
+
 .hero__bg {
   width: 1920px;
   position: absolute;

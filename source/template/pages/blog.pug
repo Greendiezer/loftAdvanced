@@ -4,9 +4,7 @@ block variables
   - var title = 'Блог'
 
 block content
-  section.section.hero
-    .welcome-background
-      canvas.welcome-background-canvas
+  section.section.hero_blog
     .hero__container
       .hero__socials
         ul.socials
@@ -19,19 +17,17 @@ block content
         .burger__line.burger__line_1
         .burger__line.burger__line_2
         .burger__line.burger__line_3
-      .arrow-down.hero__scroll-button
+      .arrow-down.hero__scroll-button.arrow-down_blog
         svg.arrow-down__pic
           use(xlink:href="/assets/img/sprite.svg#arrow_down")
       .hero__title
-        .section-title
-          svg.section-title__pic
-            use(xlink:href="/assets/img/sprite.svg#portfolio_header")
         .user.hero__user
           .user__pic
             img(src="/assets/img/content/avatar-big.jpg", alt="").user__pic-img
           .user__description
-            .user__name Блог
-            .user__desc Статьи, которые я написал
+            .block-title.block-title_blog(style="background-image: url('/assets/img/bg/blog_header_bg.png')")
+              .block-title__text.block-title__text_blog Блог
+            .user__desc.user__desc_blog Статьи, которые я написал
   section.section.blog
     .triangles
       svg.traingles__works(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 1000 130', preserveaspectratio='none')
@@ -66,6 +62,16 @@ block content
                     p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla aperiam quo, dolores laboriosam quidem asperiores eius voluptatibus culpa error repudiandae maxime animi officiis autem, deserunt exercitationem dignissimos cumque in quam.
                     p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam eos cupiditate, fugit accusantium vitae a aspernatur laborum quam, quibusdam, aliquid voluptatum, debitis assumenda nulla. Voluptates autem deleniti, nobis minus repellat.
                     p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quae debitis dolore sapiente magni quia eos et saepe illum omnis dicta repellendus, quam pariatur, adipisci cupiditate molestiae suscipit recusandae. Harum?
+                    p.codepen(data-height='265', data-theme-id='dark', data-slug-hash='vZgqXW', data-default-tab='css', data-user='Vinokurov', data-embed-version='2', data-pen-title='vZgqXW')
+                      | See the Pen 
+                      a(href='https://codepen.io/Vinokurov/pen/vZgqXW/') vZgqXW
+                      |  by Sergey (
+                      a(href='https://codepen.io/Vinokurov') @Vinokurov
+                      | ) on 
+                      a(href='https://codepen.io') CodePen
+                      | .
+                    script(async='', src='https://production-assets.codepen.io/assets/embed/ei.js')
+
   footer.footer.footer_blog
     .footer__top
       .footer__container

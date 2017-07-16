@@ -8,11 +8,16 @@
   display: inline-block;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   line-height: 1.04;
   @include phone() {
         padding: 40px 0;
     }
+}
+
+.block-title_blog{
+  color: white;
+  padding:0 60px 30px 60px;
 }
 
 .block-title__text{
@@ -29,4 +34,10 @@
     height: 3px;
     background: $main-font-color;
   }
+}
+
+.block-title__text_blog{
+    &:after {
+      background: white;
+    }
 }
