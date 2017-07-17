@@ -44,8 +44,11 @@ block content
                                 .input__wrap
                                     input.input__area(type="password" name="password" placeholder="Пароль", required="required")
                                 .input__wrap.checkbox
-                                    input(type="checkbox", required="required", id="human")
-                                    label(for="human") Я человек
+                                    .checkbox__elem
+                                        label.checkbox__label
+                                            input.checkbox__input(type="checkbox", required="required", id="human")
+                                            .checkbox__fake
+                                            .checkbox__title Я человек
                                 .radio-group
                                     .radio__label Вы точно не робот?
                                     .radio__wrap
