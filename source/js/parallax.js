@@ -15,7 +15,7 @@
 
                 init: function(wScroll) {
                     this.move(bg, wScroll, 15);
-                    this.move(user, wScroll, 10);
+                    this.move(user, wScroll, 6);
                 }
             }
             

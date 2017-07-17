@@ -28,6 +28,7 @@
 }
 
 .hero__socials .socials__link-img{
+   transition: .3s;
    
     &:hover{
         fill: #6c9c5a;
@@ -36,6 +37,7 @@
 
 .footer__socials .socials__link-img{
     opacity: .3;
+    transition: .3s;
 
     &:hover{
         opacity: 1;

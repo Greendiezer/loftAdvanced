@@ -1,5 +1,4 @@
 (function() {
-    console.log('hello');
     var burger = $('.burger');
         nav = $('.navigation');
         menu = $('.navigation__list')

@@ -1,4 +1,5 @@
 (function () {
+    
 
     var arrow = (function() {
         return {
@@ -15,9 +16,10 @@
                 });
             }
         }
+
     })();
-
-    arrow.init();
-
-
+    
+    if ($('.arrow').length) {
+        arrow.init();
+    }
 })();
