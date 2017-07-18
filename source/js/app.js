@@ -10,6 +10,7 @@ $(function(){
 
         setTimeout(function() {
             flipper.toggleClass('flip');
+            auth_btn.toggleClass('auth__button_active');
         }, 400);
     });
 
@@ -18,6 +19,7 @@ $(function(){
 
         setTimeout(function () {
             flipper.toggleClass('flip');
+            auth_btn.toggleClass('auth__button_active');
         }, 400);
 
     });

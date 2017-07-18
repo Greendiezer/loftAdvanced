@@ -44,6 +44,7 @@
     right: 100px;
     top: 23px;
     cursor: pointer;
+
     &:hover .auth__button-link{
         background: $light-green;
 
@@ -55,6 +56,11 @@
         transform: translatex(-50%);
         padding: 3px 13px;
         }
+}
+
+.auth__button_active{
+    top: -1000px;
+    transition: .3s;
 }
 
 .auth__button-link{
@@ -75,7 +81,7 @@
 .user__wrapper{
     display: block;
     margin: auto;
-    padding-top: 3.437rem;
+    // padding-top: 3.437rem;
     text-align: center;
 }
 
@@ -89,8 +95,12 @@
 }
 .user__block-content{
     text-align: center;
-    padding-top: 40px;
+    padding-top: 52px;
+    &_back{
+        padding-top: 0;
+    }
 }
+
 
 
 .user__socials{
@@ -145,18 +155,53 @@
 }
 
 .input__wrap{
-    margin: 0 20px;
+    margin: 0 20px 18px;
+    position: relative;
+}
+
+.input__wrap_login{
+    border-radius: 40px;
+    overflow: hidden;
+    &:before{
+        content: "";
+        width: 45px;
+        height: 45px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        @include sprite-image($login-icon);
+        @include sprite-position($login-icon);
+    }
+
+}
+
+.input__wrap_password{
+     border-radius: 40px;
+    overflow: hidden;
+    &:before{
+        content: "";
+        width: 45px;
+        height: 45px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        @include sprite-image($password-icon);
+        @include sprite-position($password-icon);
+    }
+ 
 }
 
 .checkbox{
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .input__area{
     width: 100%;
+    height: 45px;
     background-color: white;
-    margin-bottom: 20px;
-    padding: 15px;
+    padding: 15px 15px 15px 50px;
     border-radius: 40px;
 }
 .user__block_auth{

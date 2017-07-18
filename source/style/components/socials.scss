@@ -46,9 +46,14 @@
 
 .user__socials .socials__link-img{
     opacity: .3;
+    transition: .4s;
 
     &:hover{
         opacity: 1;
         fill: #6c9c5a;
     }
+}
+
+.flip .user__socials{
+    opacity: 0;
 }

@@ -22,6 +22,16 @@
 .traingles__works {
   height: 180px;
   width: 100%;
+  @include laptop() {
+    height: 120px;
+  }
+  @include tablet() {
+    height: 80px; 
+  }
+
+  @include phone() {
+    height: 40px;
+  }
 }
 
 

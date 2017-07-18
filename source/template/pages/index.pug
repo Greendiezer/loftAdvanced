@@ -16,8 +16,8 @@ block content
                     .user__block
                         .user__block-content
                             .user__img
-                                img.user__pic(src="/assets/img/content/avatar-big.jpg", alt="")
-                            .user__name Сергей Винокуров
+                                img.user__pic.user__pic_welcome(src="/assets/img/content/avatar-big.jpg", alt="")
+                            .user__name.user__name_welcome Сергей Винокуров
                             .user__desc Личный сайт веб разработчика
                             .user__socials
                                 ul.socials
@@ -36,12 +36,12 @@ block content
                                     a.user__nav-link.btn(href="/blog.html") Блог
                 .flipper__block.flipper__block_back
                     .user__block.user__block_auth
-                        .user__block-content 
+                        .user__block-content.user__block-content_back
                             form.form__login
                                 .block-subtitle.login-subtitle Авторизуйтесь
-                                .input__wrap
+                                .input__wrap.input__wrap_login
                                     input.input__area(type="text" name="login" placeholder="Логин", required="required")
-                                .input__wrap
+                                .input__wrap.input__wrap_password
                                     input.input__area(type="password" name="password" placeholder="Пароль", required="required")
                                 .input__wrap.checkbox
                                     .checkbox__elem

@@ -12,22 +12,58 @@
   top: 0;
   z-index: 0;
   overflow: hidden;
-  min-height: 1272px;
+  height: 110vh;
 }
+
 
 .hero-background__img{
   height: 100%;
   min-width: 100%;
-  display: block;
-  margin: 0 auto;
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hero-background__img_retina{
+  @include retina() {
+    display: block;
+  }
+}
+
+.hero-background__img_desktop{
+  @include desktop() {
+    display: block;
+  }
+}
+.hero-background__img_laptop{
+  @include laptop() {
+    display: block;
+  }
+}
+.hero-background__img_tablet{
+  @include tablet() {
+    display: block;
+  }
+}
+// .hero-background__img_phone{
+//   @include phone() {
+//     display: block;
+//   }
+// }
+
+.hero-background__img_blog{
+  height: auto;
+  width: 110%;
+  @include tablet () {
+    width: auto;
+    height: 100%;
+  }
 }
 
 .hero_blog{
-    height: 466px;
-    min-height: 466px;
+    height: 50vh;
     padding: 14px 30px;
-    background: url("../../assets/img/bg/welcome_bg.jpg") 50%;
-    background-size: cover;
 }
 
 .hero__bg {
