@@ -1,3 +1,11 @@
+.slider{
+    overflow: hidden;
+    white-space: nowrap;
+
+    &__wrap{
+        position: relative;
+    }
+}
 
 .slider-container{
     width: 100%;
@@ -6,6 +14,13 @@
 }
 
 .slider__item{
+    display: inline-block;
+    width: 100vw;
+    white-space: normal;
+  
+}
+
+.slider__item-wrap{
     display: flex;
     @include tablet() {
         flex-direction: column;
