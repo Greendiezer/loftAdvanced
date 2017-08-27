@@ -1,0 +1,24 @@
+.arrow-down {
+  width: 26px;
+  height: 16px;
+  z-index: 10;
+  padding: 10px;
+  box-sizing: content-box;
+
+  &:hover .arrow-down__pic{
+    opacity: 1;
+  }
+}
+
+.arrow-down_blog{
+  display: none;
+}
+
+.arrow-down__pic {
+  display: block;
+  width: 100%;
+  height: 100%;
+  fill: #fff;
+  opacity: .7;
+  transition: all .3s;
+}

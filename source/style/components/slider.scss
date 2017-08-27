@@ -1,0 +1,160 @@
+.slider{
+    overflow: hidden;
+    white-space: nowrap;
+
+    &__wrap{
+        position: relative;
+    }
+}
+
+.slider-container{
+    width: 100%;
+    height: 100%;
+    background: $green;   
+}
+
+.slider__item{
+    display: inline-block;
+    width: 100vw;
+    white-space: normal;
+  
+}
+
+.slider__item-wrap{
+    display: flex;
+    @include tablet() {
+        flex-direction: column;
+    }
+  
+}
+
+
+.slider__item-left,
+.slider__item-right{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    @include tablet() {
+        width: 100%;
+    }
+}
+
+.slider__item-right{
+    align-items: center;
+    
+}
+
+.slider__item-left{
+    @include tablet() {
+       order: 1;
+    }
+}
+
+.slider__btn{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    width: 20px;
+    height: 25px;
+}
+.slider__btn_next{
+    right: 30px;
+    transform: rotate(-90deg);
+    @include phone() {
+       right: 5px;
+    }
+}
+
+.slider__btn_prev{
+    left: 30px;
+    transform: rotate(90deg);
+    @include phone() {
+       left: 5px;
+    }
+}
+
+.arrow__pic {
+  display: block;
+  width: 100%;
+  height: 100%;
+  fill: $light-green;
+  opacity: .7;
+  transition: all .3s;
+  cursor: pointer;
+  &:hover{
+      opacity: 1;
+  }
+}
+
+
+.work__img{
+    text-align: center;
+}
+
+.work__pic{
+    max-width: 100%;
+}
+
+.work{
+    width: 335px;
+    @include tablet() {
+    width: 100%;
+    text-align: center;
+    margin: 100px 0;
+  }
+}
+
+.work-subtitle{
+    font-size: 35px;
+    font-family: "sansus";
+    color: $main-font-color;
+    text-transform: uppercase;
+    padding: 20px 0;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 30px;
+    @include tablet() {
+        margin-bottom: 20px;
+    }
+
+    &:after {
+        position: absolute;
+        content: "";
+        display: block;
+        bottom: 0;
+        width: 89px;
+        height: 3px;
+        background: $main-font-color;
+        @include tablet() {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+  }
+}
+.work__skills{
+    margin-bottom: 60px;
+    @include tablet() {
+    margin-bottom: 40px;
+  }
+}
+.work__skills-desc{
+    color: $light-green;
+    font-family: "robotomedium";
+}
+
+.work__link{
+    display: inline-block;
+    border-radius: 40px;
+    background: $light-green;
+    padding: 17px 20px;
+    cursor: pointer;
+}
+.link-button__icon{
+    margin-right: 10px;
+    color: white;
+    font-size: 18px;
+}
+.link-button__text{
+    font-family: "robotomedium";
+    color: white;
+}

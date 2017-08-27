@@ -1,5 +1,17 @@
-body {
-  margin: 0;
-}
+//colors
+$white: #f4f5f0;
+$green: #ebefe2;
+$light-green: #4e8839;
+$main-font-color: #566358;
+$blog-font-color: #455a64;
+$gray: #5d5a55;
+$light-gray: #f8f9f5;
 
-@import 'common/greating';
+
+//includes
+@import "mixins/mixins.scss";
+@import "layout/fonts.scss";
+@import "layout/font-awesome.scss";
+@import "layout/base.scss";
+
+@import "components/**/*";

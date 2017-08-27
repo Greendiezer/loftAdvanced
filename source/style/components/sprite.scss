@@ -1,0 +1,189 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$about-header-bg-name: 'about_header_bg';
+$about-header-bg-x: 1800px;
+$about-header-bg-y: 662px;
+$about-header-bg-offset-x: -1800px;
+$about-header-bg-offset-y: -662px;
+$about-header-bg-width: 499px;
+$about-header-bg-height: 175px;
+$about-header-bg-total-width: 2317px;
+$about-header-bg-total-height: 1348px;
+$about-header-bg-image: '../../assets/img/sprite.png';
+$about-header-bg: (1800px, 662px, -1800px, -662px, 499px, 175px, 2317px, 1348px, '../../assets/img/sprite.png', 'about_header_bg', );
+$blog-header-bg-name: 'blog_header_bg';
+$blog-header-bg-x: 1176px;
+$blog-header-bg-y: 1035px;
+$blog-header-bg-offset-x: -1176px;
+$blog-header-bg-offset-y: -1035px;
+$blog-header-bg-width: 303px;
+$blog-header-bg-height: 208px;
+$blog-header-bg-total-width: 2317px;
+$blog-header-bg-total-height: 1348px;
+$blog-header-bg-image: '../../assets/img/sprite.png';
+$blog-header-bg: (1176px, 1035px, -1176px, -1035px, 303px, 208px, 2317px, 1348px, '../../assets/img/sprite.png', 'blog_header_bg', );
+$portfolio-header-name: 'portfolio_header';
+$portfolio-header-x: 0px;
+$portfolio-header-y: 1035px;
+$portfolio-header-offset-x: 0px;
+$portfolio-header-offset-y: -1035px;
+$portfolio-header-width: 1176px;
+$portfolio-header-height: 313px;
+$portfolio-header-total-width: 2317px;
+$portfolio-header-total-height: 1348px;
+$portfolio-header-image: '../../assets/img/sprite.png';
+$portfolio-header: (0px, 1035px, 0px, -1035px, 1176px, 313px, 2317px, 1348px, '../../assets/img/sprite.png', 'portfolio_header', );
+$quotes-name: 'quotes';
+$quotes-x: 2056px;
+$quotes-y: 1002px;
+$quotes-offset-x: -2056px;
+$quotes-offset-y: -1002px;
+$quotes-width: 75px;
+$quotes-height: 61px;
+$quotes-total-width: 2317px;
+$quotes-total-height: 1348px;
+$quotes-image: '../../assets/img/sprite.png';
+$quotes: (2056px, 1002px, -2056px, -1002px, 75px, 61px, 2317px, 1348px, '../../assets/img/sprite.png', 'quotes', );
+$works-bg-name: 'works_bg';
+$works-bg-x: 0px;
+$works-bg-y: 0px;
+$works-bg-offset-x: 0px;
+$works-bg-offset-y: 0px;
+$works-bg-width: 1800px;
+$works-bg-height: 1035px;
+$works-bg-total-width: 2317px;
+$works-bg-total-height: 1348px;
+$works-bg-image: '../../assets/img/sprite.png';
+$works-bg: (0px, 0px, 0px, 0px, 1800px, 1035px, 2317px, 1348px, '../../assets/img/sprite.png', 'works_bg', );
+$works-header-bg-name: 'works_header_bg';
+$works-header-bg-x: 1800px;
+$works-header-bg-y: 837px;
+$works-header-bg-offset-x: -1800px;
+$works-header-bg-offset-y: -837px;
+$works-header-bg-width: 506px;
+$works-header-bg-height: 165px;
+$works-header-bg-total-width: 2317px;
+$works-header-bg-total-height: 1348px;
+$works-header-bg-image: '../../assets/img/sprite.png';
+$works-header-bg: (1800px, 837px, -1800px, -837px, 506px, 165px, 2317px, 1348px, '../../assets/img/sprite.png', 'works_header_bg', );
+$work1-name: 'work1';
+$work1-x: 1800px;
+$work1-y: 0px;
+$work1-offset-x: -1800px;
+$work1-offset-y: 0px;
+$work1-width: 517px;
+$work1-height: 662px;
+$work1-total-width: 2317px;
+$work1-total-height: 1348px;
+$work1-image: '../../assets/img/sprite.png';
+$work1: (1800px, 0px, -1800px, 0px, 517px, 662px, 2317px, 1348px, '../../assets/img/sprite.png', 'work1', );
+$fav-forest-name: 'fav_forest';
+$fav-forest-x: 1800px;
+$fav-forest-y: 1002px;
+$fav-forest-offset-x: -1800px;
+$fav-forest-offset-y: -1002px;
+$fav-forest-width: 256px;
+$fav-forest-height: 256px;
+$fav-forest-total-width: 2317px;
+$fav-forest-total-height: 1348px;
+$fav-forest-image: '../../assets/img/sprite.png';
+$fav-forest: (1800px, 1002px, -1800px, -1002px, 256px, 256px, 2317px, 1348px, '../../assets/img/sprite.png', 'fav_forest', );
+$login-icon-name: 'login_icon';
+$login-icon-x: 2131px;
+$login-icon-y: 1002px;
+$login-icon-offset-x: -2131px;
+$login-icon-offset-y: -1002px;
+$login-icon-width: 45px;
+$login-icon-height: 45px;
+$login-icon-total-width: 2317px;
+$login-icon-total-height: 1348px;
+$login-icon-image: '../../assets/img/sprite.png';
+$login-icon: (2131px, 1002px, -2131px, -1002px, 45px, 45px, 2317px, 1348px, '../../assets/img/sprite.png', 'login_icon', );
+$password-icon-name: 'password_icon';
+$password-icon-x: 2176px;
+$password-icon-y: 1002px;
+$password-icon-offset-x: -2176px;
+$password-icon-offset-y: -1002px;
+$password-icon-width: 45px;
+$password-icon-height: 45px;
+$password-icon-total-width: 2317px;
+$password-icon-total-height: 1348px;
+$password-icon-image: '../../assets/img/sprite.png';
+$password-icon: (2176px, 1002px, -2176px, -1002px, 45px, 45px, 2317px, 1348px, '../../assets/img/sprite.png', 'password_icon', );
+$spritesheet-width: 2317px;
+$spritesheet-height: 1348px;
+$spritesheet-image: '../../assets/img/sprite.png';
+$spritesheet-sprites: ($about-header-bg, $blog-header-bg, $portfolio-header, $quotes, $works-bg, $works-header-bg, $work1, $fav-forest, $login-icon, $password-icon, );
+$spritesheet: (2317px, 1348px, '../../assets/img/sprite.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

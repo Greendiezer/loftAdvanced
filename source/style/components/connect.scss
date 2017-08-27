@@ -1,0 +1,177 @@
+.connect{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: $white;
+    // url("../img/bg/works_bg.png") bottom no-repeat;
+    background-size: cover;
+    padding-bottom: 20rem;
+    
+    .footer {
+        position:static;
+    }
+}
+.connect__container{
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    @include phone() {
+       margin: 0;
+    }
+}
+
+.connect__background{
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    min-width: 1200px;
+    z-index: 0;
+}
+
+.connect__background-img{
+    display: block;
+    height: 100%;
+    margin: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+.connect__title-block{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.connect__title{
+    width: 470px;
+    display: flex;
+    @include phone() {
+       width: 100%;
+    }
+}
+.feedback{
+    z-index: 10;
+}
+
+.contact-me{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 70px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    @include tablet() {
+        margin: 0 10px 70px;
+    }
+}
+.blur{
+    width: 380px;
+    background:  url("../img/bg/works_bg.png") center no-repeat;
+    filter: blur(20px);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+.contact-form{
+    width: 380px;
+    z-index: 1;
+}
+
+.contact-form__top{
+  
+  padding: 0 20px 20px;
+}
+.contact-form__title{
+    display: flex;
+    justify-content: center;
+    .block-subtitle{
+        padding: 20px 0;
+    }
+}
+
+.contact-form__line{
+    margin-bottom: 20px;
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+.contact-form__input{
+  background-color: rgba(255, 255, 255, .85);
+  border-radius: 25px;
+  height: 45px;
+  width: 100%;
+  padding: 20px;
+  font-family: "robotomedium";
+}
+
+.contact-form__ta{
+    height: 140px;
+    resize: vertical;
+}
+.contact-form__bottom{
+    display: flex;
+}
+.btn{
+    height: 45px;
+    text-align: center;
+    color: white;
+    transition: all .3s;
+    display: block;
+    cursor: pointer;
+    font-family: "robotomedium";
+    width: 100%;
+}
+.btn__submit{
+    background-color: rgb(108, 156, 90);
+    opacity: .8;
+    flex: 1;
+    border-radius: 0 0 0 5px;
+    border-right: 2px solid rgba(255, 255, 255, .3);
+        &:hover{
+            opacity: 1;
+        }
+}
+.btn__clear{
+    flex: 1;
+    border-radius: 0 0 5px 0;
+    background-color: rgb(78, 136, 57);
+    opacity: .9;
+        &:hover{
+            opacity: 1;
+        }
+}
+
+.works__arrow{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.arrow-up__img{
+    transform: rotate(180deg);
+    width: 30px;
+    height: 20px;
+}
+
+.arrow-up__pic{
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: .8;
+    fill: white;
+
+    &:hover{
+        opacity: 1;
+    }
+}

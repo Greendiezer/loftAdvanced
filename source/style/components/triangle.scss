@@ -1,0 +1,37 @@
+.about-triangle__left{
+  fill: $green;
+}
+.about-triangle__right{
+  fill: $white;
+  @include tablet() {
+    fill: $green;
+  }
+}
+
+
+.triangles{
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 100%;
+    fill: #f8f9f5;
+    font-size: 0;
+}
+
+
+.traingles__works {
+  height: 180px;
+  width: 100%;
+  @include laptop() {
+    height: 120px;
+  }
+  @include tablet() {
+    height: 80px; 
+  }
+
+  @include phone() {
+    height: 40px;
+  }
+}
+
+

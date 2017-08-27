@@ -1,0 +1,29 @@
+.blog{
+    background-color: $light-gray;
+}
+.blog__wrap{
+    width: 100%;
+    height: 100%;
+    padding: 40px 0 70px;
+    background-color: $light-gray;
+}
+
+.blog__container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+.blog__content{
+    display: flex;
+    flex-wrap: wrap;
+    color: $blog-font-color;
+}
+
+.blog__line{
+    background-color: rgb(55, 62, 66);
+    opacity: 0.071;
+    height: 5px;
+    margin: 70px 0;
+}

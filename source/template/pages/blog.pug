@@ -1,0 +1,82 @@
+extends ../_template
+
+block variables
+  - var title = 'Блог'
+
+block content
+  section.section.hero_blog
+    .hero-background.hero-background__blog
+      img.hero-background__img.hero-background__img_retina.hero-background__img_blog(src='assets/img/bg/welcome_bg_retina.jpg')
+      img.hero-background__img.hero-background__img_desktop.hero-background__img_blog(src='assets/img/bg/welcome_bg_desktop.jpg')
+      img.hero-background__img.hero-background__img_laptop.hero-background__img_blog(src='assets/img/bg/welcome_bg_laptop.jpg')
+      img.hero-background__img.hero-background__img_tablet.hero-background__img_blog(src='assets/img/bg/welcome_bg_tablet.jpg')
+      //- img.hero-background__img.hero-background__img_phone.hero-background__img_blog(src='assets/img/bg/welcome_bg_phone.jpg')
+    .hero__container
+      .hero__socials
+        ul.socials
+          each item in ['vk', 'github', 'in']
+            li.socials__item
+              a(href=`${item}`).socials__link
+                svg.socials__link-img
+                  use(xlink:href="/assets/img/sprite.svg#"+item)
+      .burger.hero__menu
+        .burger__line.burger__line_1
+        .burger__line.burger__line_2
+        .burger__line.burger__line_3
+      .arrow-down.hero__scroll-button.arrow-down_blog
+        svg.arrow-down__pic
+          use(xlink:href="/assets/img/sprite.svg#arrow_down")
+      .hero__title
+        .user.hero__user
+          .user__pic
+            img(src="/assets/img/content/avatar-big.jpg", alt="").user__pic-img
+          .user__description
+            .block-title.block-title_blog(style="background-image: url('/assets/img/bg/blog_header_bg.png')")
+              .block-title__text.block-title__text_blog Блог
+            .user__desc.user__desc_blog Статьи, которые я написал
+  section.section.blog.second-section
+    .triangles
+      svg.traingles__works(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 1000 130', preserveaspectratio='none')
+        polygon.left(points='0,0   0,130   500.8,130   500.8,113')
+        polygon.right(points='1000,0   1000,130   500,130   500,113')
+    .blog__wrap
+      .blog__container
+        .blog__content
+          .blog__left
+            .blog__menu
+              span.blog__menu-item.blog__tab_active Самое важное в SASS
+              span.blog__menu-item Приёмы в вёрстке, без которых не обходится ни один сайт
+              span.blog__menu-item Самый необходимый набор Gulp плагинов
+              span.blog__menu-item Почему я выбрал Jade
+          .blog__right
+            .blog__content
+              .blog__item
+                article.post
+                  h2.post__header Самое важное в SASS
+                  .post__date
+                    time.date 22 ноября 2016
+                  .post__text
+                    p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores fuga, maiores porro nam quia, magnam facilis perspiciatis sapiente vero libero, esse sed alias repudiandae voluptates ipsa beatae, quas dolorem. Quo!
+                    p div Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis nisi consectetur hic quod, vero cum accusamus mollitia incidunt tempora ex dolore veniam qui quam tempore doloremque quos architecto blanditiis in. Consequuntur ipsa quae odit quisquam quibusdam tempore expedita incidunt, id commodi, labore illum iusto earum cumque perferendis hic repellendus nisi odio doloribus omnis. Deleniti voluptates provident, modi saepe odit vel. Quo, eveniet. Perspiciatis rerum sit voluptatibus. Qui possimus quaerat veniam dolores aliquam laboriosam perspiciatis, magni labore similique. Aspernatur quae, eligendi, totam, aperiam ipsam dolorem odit consequuntur consequatur eaque illum mollitia.
+              hr.blog__line
+              .blog__item
+                article.post
+                  h2.post__header Приёмы в вёрстке, без которых не обходится ни один сайт
+                  .post__date
+                    time.date 13 ноября 2016
+                  .post__text
+                    p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla aperiam quo, dolores laboriosam quidem asperiores eius voluptatibus culpa error repudiandae maxime animi officiis autem, deserunt exercitationem dignissimos cumque in quam.
+                    p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam eos cupiditate, fugit accusantium vitae a aspernatur laborum quam, quibusdam, aliquid voluptatum, debitis assumenda nulla. Voluptates autem deleniti, nobis minus repellat.
+                    p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quae debitis dolore sapiente magni quia eos et saepe illum omnis dicta repellendus, quam pariatur, adipisci cupiditate molestiae suscipit recusandae. Harum?
+                    p.codepen(data-height='265', data-theme-id='dark', data-slug-hash='vZgqXW', data-default-tab='css', data-user='Vinokurov', data-embed-version='2', data-pen-title='vZgqXW')
+                      | See the Pen 
+                      a(href='https://codepen.io/Vinokurov/pen/vZgqXW/') vZgqXW
+                      |  by Sergey (
+                      a(href='https://codepen.io/Vinokurov') @Vinokurov
+                      | ) on 
+                      a(href='https://codepen.io') CodePen
+                      | .
+                    script(async='', src='https://production-assets.codepen.io/assets/embed/ei.js')
+
+  footer.footer.footer_blog
+    +footer()

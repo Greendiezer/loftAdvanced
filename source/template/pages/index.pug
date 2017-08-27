@@ -1,7 +1,67 @@
 extends ../_template
 
 block variables
-  - var title = 'Home page'
+    - var title = 'Добро пожаловать'
+
 
 block content
-  include ../common/_greating
+    section.section.welcome
+        .welcome-background
+            canvas.welcome-background-canvas
+        .auth__button
+            a.auth__button-link Авторизоваться
+        .user__wrapper
+            .flipper
+                .flipper__block.flipper__block_front
+                    .user__block
+                        .user__block-content
+                            .user__img
+                                img.user__pic.user__pic_welcome(src="/assets/img/content/avatar-big.jpg", alt="")
+                            .user__name.user__name_welcome Сергей Винокуров
+                            .user__desc Личный сайт веб разработчика
+                            .user__socials
+                                ul.socials
+                                    each item in ['vk', 'github', 'in']
+                                        li.socials__item
+                                            a(href=`${item}`).socials__link
+                                                svg.socials__link-img
+                                                    use(xlink:href="/assets/img/sprite.svg#"+item)
+                        .user__nav
+                            ul.user__nav-list
+                                li.user__nav-item
+                                    a.user__nav-link.btn(href="/works.html") Мои работы
+                                li.user__nav-item
+                                    a.user__nav-link.btn(href="/about.html") Обо мне
+                                li.user__nav-item
+                                    a.user__nav-link.btn(href="/blog.html") Блог
+                .flipper__block.flipper__block_back
+                    .user__block.user__block_auth
+                        .user__block-content.user__block-content_back
+                            form.form__login
+                                .block-subtitle.login-subtitle Авторизуйтесь
+                                .input__wrap.input__wrap_login
+                                    input.input__area(type="text" name="login" placeholder="Логин", required="required")
+                                .input__wrap.input__wrap_password
+                                    input.input__area(type="password" name="password" placeholder="Пароль", required="required")
+                                .input__wrap.checkbox
+                                    .checkbox__elem
+                                        label.checkbox__label
+                                            input.checkbox__input(type="checkbox", required="required", id="human")
+                                            .checkbox__fake
+                                            .checkbox__title Я человек
+                                .radio-group
+                                    .radio__label Вы точно не робот?
+                                    .radio__wrap
+                                        input.radio(type="radio", name="human", value="yes", id="radio-yes")
+                                        label(for="radio-yes") Да
+                                    .radio__wrap
+                                        input.radio(type="radio", name="human", value="no", id="radio-no")
+                                        label(for="radio-no") Не уверен
+                                .auth__nav
+                                    ul.auth__nav-list
+                                        li.auth__nav-item
+                                            a.auth__nav-link.btn(href="#") На главную
+                                        li.auth__nav-item
+                                            a.auth__nav-link.btn(href="#") Войти
+        .footer__bottom
+            .footer__text © Сергей Винокуров | создано с любовью в LoftSchool | 2017

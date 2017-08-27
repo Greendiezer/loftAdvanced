@@ -1,0 +1,100 @@
+.hero {
+  overflow: hidden;
+  height: 100vh;
+  
+}
+
+.hero-background{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 0;
+  overflow: hidden;
+  height: 110vh;
+}
+
+
+.hero-background__img{
+  height: 100%;
+  min-width: 100%;
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hero-background__img_retina{
+  @include retina() {
+    display: block;
+  }
+}
+
+.hero-background__img_desktop{
+  @include desktop() {
+    display: block;
+  }
+}
+.hero-background__img_laptop{
+  @include laptop() {
+    display: block;
+  }
+}
+.hero-background__img_tablet{
+  @include tablet() {
+    display: block;
+  }
+}
+// .hero-background__img_phone{
+//   @include phone() {
+//     display: block;
+//   }
+// }
+
+.hero-background__img_blog{
+  height: auto;
+  width: 110%;
+  @include tablet () {
+    width: auto;
+    height: 100%;
+  }
+}
+
+.hero_blog{
+    height: 50vh;
+    padding: 14px 30px;
+}
+
+.hero__bg {
+  width: 1920px;
+  position: absolute;
+  display: block;
+  height: 100%;
+}
+
+.hero__container {
+  position: relative;
+  height: 100%;
+    @extend %clearfix;
+}
+
+.hero__title {
+  right: 0;
+  left: 0;
+  @include centered(y);
+}
+
+.hero__user {
+  @include centered();
+  text-align: center;
+}
+
+.hero__user-content{
+  position: relative;
+}
+
+.hero__scroll-button {
+  bottom: 91px;
+  @include centered(x);
+}

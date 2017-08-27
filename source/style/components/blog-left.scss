@@ -1,0 +1,27 @@
+.blog__left{
+    position: relative;
+    width: calc(33.33% - 10px);
+    @include tablet() {
+        display: none;
+    }
+}
+
+.blog__menu{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog__menu-item{
+    cursor: pointer;
+    padding: 10px 20px 10px 0;
+    text-align: right;
+    line-height: 1.625;
+    margin-right: 25%;
+}
+
+.blog__tab_active{
+    font-family: "robotobold";
+    color: $light-green;
+    border-right: 2px solid $light-green;
+}

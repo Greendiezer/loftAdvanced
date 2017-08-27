@@ -1,0 +1,26 @@
+.burger{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 42px;
+    cursor: pointer;
+    z-index: 50;
+}
+
+.burger__line{
+    margin-top: 10px;
+    height: 5px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.burger_active .burger__line_2{
+    opacity: 0;
+}
+
+.burger_active .burger__line_1{
+    transform: rotate(45deg) translate(10px, 10px);
+}
+.burger_active .burger__line_3{
+    transform: rotate(-45deg) translate(10px, -11px);
+}

@@ -1,0 +1,43 @@
+.block-title {
+  font-size: 63px;
+  text-transform: uppercase;
+  color: #373e42;
+  font-family: "sansus";
+  padding: 40px 60px;
+  position: relative;
+  display: inline-block;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 1.04;
+  @include phone() {
+        padding: 40px 0;
+    }
+}
+
+.block-title_blog{
+  color: white;
+  padding:0 60px 30px 60px;
+}
+
+.block-title__text{
+  text-align: center;
+  
+    &:after {
+    position: absolute;
+    content: "";
+    display: block;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 89px;
+    height: 3px;
+    background: $main-font-color;
+  }
+}
+
+.block-title__text_blog{
+    &:after {
+      background: white;
+    }
+}

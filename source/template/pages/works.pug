@@ -1,0 +1,147 @@
+extends ../_template
+
+block variables
+  - var title = 'Мои работы'
+
+block content
+  section.section.hero
+    .hero-background
+      img.hero-background__img.hero-background__img_retina(src='assets/img/bg/welcome_bg_retina.jpg')
+      img.hero-background__img.hero-background__img_desktop(src='assets/img/bg/welcome_bg_desktop.jpg')
+      img.hero-background__img.hero-background__img_laptop(src='assets/img/bg/welcome_bg_laptop.jpg')
+      img.hero-background__img.hero-background__img_tablet(src='assets/img/bg/welcome_bg_tablet.jpg')
+      //- img.hero-background__img.hero-background__img_phone(src='assets/img/bg/welcome_bg_phone.jpg')
+    .hero__container
+      .hero__socials
+        ul.socials
+          each item in ['vk', 'github', 'in']
+            li.socials__item
+              a(href=`${item}`).socials__link
+                svg.socials__link-img
+                  use(xlink:href="/assets/img/sprite.svg#"+item)
+      .burger.hero__menu
+        .burger__line.burger__line_1
+        .burger__line.burger__line_2
+        .burger__line.burger__line_3
+      .arrow-down.hero__scroll-button.arrow
+        svg.arrow-down__pic
+          use(xlink:href="/assets/img/sprite.svg#arrow_down")
+      .hero__title
+        .section-title
+          svg.section-title__pic
+            use(xlink:href="/assets/img/sprite.svg#portfolio_header")
+        .user.hero__user
+          .hero__user-content
+            .user__pic
+              img(src="/assets/img/content/avatar-big.jpg", alt="").user__pic-img
+            .user__description
+              .user__name Сергей Винокуров
+              .user__desc Личный сайт разработчика
+  section.section-works.second-section
+    .triangles
+      svg.traingles__works(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 1000 130', preserveaspectratio='none')
+        polygon.left(points='0,0   0,130   500.8,130   500.8,113')
+        polygon.right(points='1000,0   1000,130   500,130   500,113')
+    .works__title
+      .block-title.block-title__works(style="background-image: url('/assets/img/bg/works_header_bg.png')")
+        .block-title__text Мои работы
+    .slider-container
+      .slider__wrap
+        .slider__controls
+          a.slider__btn.slider__btn_next
+            svg.arrow__pic
+              use(xlink:href="/assets/img/sprite.svg#arrow_down")
+          a.slider__btn.slider__btn_prev
+            svg.arrow__pic
+              use(xlink:href="/assets/img/sprite.svg#arrow_down")
+        ul.slider
+          li.slider__item
+            .slider__item-wrap
+              .slider__item-left
+                .work__img
+                  img.work__pic(src="/assets/img/content/works/work1.png")
+              .slider__item-right
+                .work
+                  .work__title
+                    .work-subtitle Сайт школы онлайн образования
+                  .work__skills
+                    span.work__skills-desc HTML, CSS, JAVASCRIPT
+                  a.work__link
+                    i.fa.fa-link.link-button__icon
+                    span.link-button__text Посмотреть сайт
+          li.slider__item
+            .slider__item-wrap
+              .slider__item-left
+                .work__img
+                  img.work__pic(src="/assets/img/content/works/work1.png")
+              .slider__item-right
+                .work
+                  .work__title
+                    .work-subtitle Сайт школы онлайн образования
+                  .work__skills
+                    span.work__skills-desc HTML, CSS, JAVASCRIPT
+                  a.work__link
+                    i.fa.fa-link.link-button__icon
+                    span.link-button__text Посмотреть сайт
+          li.slider__item
+            .slider__item-wrap
+              .slider__item-left
+                .work__img
+                  img.work__pic(src="/assets/img/content/works/work1.png")
+              .slider__item-right
+                .work
+                  .work__title
+                    .work-subtitle Сайт школы онлайн образования
+                  .work__skills
+                    span.work__skills-desc HTML, CSS, JAVASCRIPT
+                  a.work__link
+                    i.fa.fa-link.link-button__icon
+                    span.link-button__text Посмотреть сайт
+
+
+  section.connect
+    //- .connect__container
+    .connect__background
+      img.connect__background-img(src="assets/img/bg/works_bg.png")
+    .connect__title-block
+      .block-title.connect__title(style="background-image: url('/assets/img/bg/about_header_bg.png')")
+        .block-title__text Что обо мне говорят
+    .feedback
+      ul.reviews__list
+        li.reviews__item
+          .review
+            .review-user__img
+              img.review-user__pic(src="/assets/img/content/review_user1.jpg")
+            .review__text
+              p.review-user__text Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+              span.review-user__name Ковальчук Дмитрий
+              span.review-user__occ - основатель Loftschool
+        li.reviews__item
+          .review
+            .review-user__img
+              img.review-user__pic(src="/assets/img/content/review_user2.jpg")
+            .review__text
+              p.review-user__text Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
+              span.review-user__name Сабанцев Владимир
+              span.review-user__occ - преподаватель
+    .contact-me
+      .blur
+      .contact-form
+        .contact-form__top
+          .contact-form__title
+            .block-subtitle Связаться со мной
+          .contact-form__line
+            input.contact-form__input(type="text", name="name", placeholder="Ваше имя", required)
+          .contact-form__line
+            input.contact-form__input(type="text", name="email", placeholder="Ваш email", required)
+          .contact-form__line
+            textarea.contact-form__input.contact-form__ta(name="user-message", placeholder="Ваше сообщение")
+        .contact-form__bottom
+          input.btn__submit.btn(type="submit", value="Отправить")
+          input.btn__clear.btn(type="reset", value="Очистить")
+    .arrow.works__arrow
+      a.arrow-up__img
+        svg.arrow-up__pic
+          use(xlink:href="/assets/img/sprite.svg#arrow_down")
+  footer.footer
+    +footer()
